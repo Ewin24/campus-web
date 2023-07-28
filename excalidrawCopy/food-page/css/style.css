@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(30, 29, 43);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.btn {
+    border: #ff702a;
+    background-color: #ff702a;
+}
+
+h1,
+h6,
+hr {
+    color: #ff702a;
+}
+
+h4,
+h2,
+p {
+    color: #fff;
+}
+
+.navbar a,
+.navbar-nav a {
+    color: #fff;
+}
+
+.navbar, header {
+    background-color: #2c2b47;
+}
+
+
+hr {
+    color: #ff702a;
+    border: solid 3px #ff702a;
+}
