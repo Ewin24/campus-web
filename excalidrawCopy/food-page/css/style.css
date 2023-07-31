@@ -13,7 +13,10 @@ body {
 
 h1,
 h6,
-hr {
+hr,
+.navbar-brand,
+.card-price,
+.services-title {
     color: #ff702a;
 }
 
@@ -23,12 +26,12 @@ p {
     color: #fff;
 }
 
-.navbar a,
 .navbar-nav a {
     color: #fff;
 }
 
-.navbar, header {
+.navbar,
+header {
     background-color: #2c2b47;
 }
 
@@ -36,4 +39,85 @@ p {
 hr {
     color: #ff702a;
     border: solid 3px #ff702a;
+}
+
+
+h1 {
+    font-size: 60px;
+}
+
+.card {
+    margin-top: 5%;
+    background-color: #ffefe8;
+}
+
+.card-text {
+    color: black;
+}
+
+
+
+/* hace que la imagen se ajuste al tamaño del div */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#h2-especial {
+    color: black;
+}
+
+
+
+/* footer */
+.footer {
+    padding: 30px 0;
+    color: white;
+}
+
+.small-line {
+    width: 30px;
+    border-top: 2px solid #777;
+    margin: 10px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.btn-social-icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.btn-twitter {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.btn-instagram {
+    background-color: #e4405f;
+    color: #fff;
+}
+
+.btn-linkedin {
+    background-color: #0077b5;
+    color: #fff;
 }
