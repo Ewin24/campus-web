@@ -55,8 +55,6 @@ h1 {
     color: black;
 }
 
-
-
 /* hace que la imagen se ajuste al tamaño del div */
 .img-responsive {
     max-width: 100%;
@@ -95,29 +93,18 @@ ul li {
     margin-top: 20px;
 }
 
-.btn-social-icon {
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-social {
     margin-right: 10px;
     width: 40px;
     height: 40px;
     line-height: 40px;
-}
-
-.btn-facebook {
-    background-color: #3b5998;
-    color: #fff;
-}
-
-.btn-twitter {
-    background-color: #1da1f2;
-    color: #fff;
-}
-
-.btn-instagram {
-    background-color: #e4405f;
-    color: #fff;
-}
-
-.btn-linkedin {
-    background-color: #0077b5;
-    color: #fff;
+    border-radius: 100%;
 }
