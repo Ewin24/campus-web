@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap');
+
+body {
+    font-family: 'REM', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5ebe4;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div-contenedor>img {
+    width: 300px;
+    height: 300px;
+}
+
+.div-contenedor>h2 {
+    color: black;
+    font-size: 23px;
+}
+
+.div-contenedor {
+
+    margin: 10%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+}
+
+.navbar {
+    display: flex;
+    color: black;
+    background-color: #cdc7c4;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-items:hover {
+    border: 2px solid white;
+}
+
+.navbar-items {
+    padding: 10px 20px;
+    display: flex;
+
+}
+
+
+.contenedor {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(30, 29, 43);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.btn {
+    border: #ff702a;
+    background-color: #ff702a;
+}
+
+h1,
+h6,
+hr,
+.navbar-brand,
+.card-price,
+.services-title {
+    color: #ff702a;
+}
+
+h4,
+h2,
+p {
+    color: #fff;
+}
+
+.navbar-nav a {
+    color: #fff;
+}
+
+
+hr {
+    color: #ff702a;
+    border: solid 3px #ff702a;
+}
+
+
+h1 {
+    font-size: 60px;
+}
+
+.card {
+    margin-top: 5%;
+    background-color: #ffefe8;
+}
+
+.card-text {
+    color: black;
+}
+
+/* hace que la imagen se ajuste al tamaño del div */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#h2-especial {
+    color: black;
+}
+
+
+
+/* footer */
+.footer {
+    padding: 30px 0;
+    color: white;
+}
+
+.small-line {
+    width: 30px;
+    border-top: 2px solid #777;
+    margin: 10px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-social {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none !important;
+}
