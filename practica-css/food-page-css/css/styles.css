@@ -1,14 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* general */
 body {
+    background-color: rgb(30, 29, 43);
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+.btn {
+    border: #ff702a;
+    background-color: #ff702a;
+    padding: 1%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    color: #ff702a;
+    border: solid 3px #ff702a;
+}
+
+.text-page,
+h2 {
+    color: white;
+}
+
+h3 {
+    color: #ff702a;
 }
 
 
-.container {
-    display: grid;
-    grid-template-columns: 100%;
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-page {
+    width: 70%;
+    display: flex;
+    color: #ff702a;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu p {
+    margin: 3%;
+}
+
+.menu {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: #fff;
+}
+
+/* header */
+
+.header {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.header-text {
+
+    margin: 3%;
+}
+
+.image {
+    width: 50%;
+    margin: 3%;
+}
+
+.title {
+    font-size: 60px;
+    color: #ff702a;
+}
+
+
+
+
+/* tarjetas */
+
+.card {
+    margin-top: 5%;
+    background-color: #ffefe8;
+}
+
+.card-text {
+    color: black;
+}
+
+.card-price {
+    color: #ff702a;
+}
+
+.card-text {
+    color: black;
+}
+
+/* hace que la imagen se ajuste al tamaño del div */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* banner */
+.banner {
+    background-color: #ffefe8;
+    padding: 5%;
+    text-align: center;
+}
+
+
+/* footer */
+.footer {
+    padding: 30px 0;
+    color: white;
+}
+
+.small-line {
+    width: 30px;
+    border-top: 2px solid #777;
+    margin: 10px auto;
+}
+
+.footer>li .footer h3 {
+    color: white;
+}
+
+.btn-footer {
+    margin-right: 10px;
+    background-color: #ff702a;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100%;
+    text-decoration: none;
 }
