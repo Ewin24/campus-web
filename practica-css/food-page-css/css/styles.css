@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 .btn {
     border: #ff702a;
     background-color: #ff702a;
@@ -27,7 +31,9 @@ h2 {
     color: white;
 }
 
-h3 {
+h3,
+.mini-text,
+.card-price {
     color: #ff702a;
 }
 
@@ -84,41 +90,111 @@ h3 {
     color: #ff702a;
 }
 
+/* About */
 
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.about .image {
+    width: 40%;
+}
+
+.about .about-us {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .image,
+    .about .about-us {
+        width: 80%;
+    }
+}
 
 
 /* tarjetas */
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .card {
     margin-top: 5%;
     background-color: #ffefe8;
-}
-
-.card-text {
-    color: black;
-}
-
-.card-price {
-    color: #ff702a;
-}
-
-.card-text {
-    color: black;
-}
-
-/* hace que la imagen se ajuste al tamaño del div */
-.img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-/* banner */
-.banner {
-    background-color: #ffefe8;
-    padding: 5%;
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
 }
 
+
+@media (max-width: 768px) {
+    .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc(100% - 20px);
+        margin-top: 2%;
+    }
+}
+
+/* Services */
+.Services {
+    margin: 3% 0;
+}
+
+.Services .food-menu-header {
+    text-align: center;
+}
+
+.Services .foods {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente en escritorio */
+    flex-wrap: wrap;
+}
+
+.Services .foods>div {
+    flex-basis: calc(30.33% - 20px);
+    margin: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.Services .foods img {
+    width: 100;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .Services .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Services .foods>div {
+        flex-basis: 100%;
+        margin-top: 2%;
+    }
+
+    .Services .foods img {
+        width: 60%;
+    }
+}
 
 /* footer */
 .footer {
