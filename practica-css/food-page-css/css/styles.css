@@ -6,6 +6,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 .btn {
     border: #ff702a;
     background-color: #ff702a;
@@ -27,7 +31,9 @@ h2 {
     color: white;
 }
 
-h3 {
+h3,
+.mini-text,
+.card-price {
     color: #ff702a;
 }
 
@@ -84,64 +90,186 @@ h3 {
     color: #ff702a;
 }
 
+/* About */
 
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.about .image {
+    width: 40%;
+}
+
+.about .about-us {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .image,
+    .about .about-us {
+        width: 80%;
+    }
+}
 
 
 /* tarjetas */
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.food-menu-header {
+    text-align: center;
+}
 
 .card {
     margin-top: 5%;
     background-color: #ffefe8;
-}
-
-.card-text {
-    color: black;
-}
-
-.card-price {
-    color: #ff702a;
-}
-
-.card-text {
-    color: black;
-}
-
-/* hace que la imagen se ajuste al tamaño del div */
-.img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-/* banner */
-.banner {
-    background-color: #ffefe8;
-    padding: 5%;
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
 }
 
+
+@media (max-width: 768px) {
+    .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc(100% - 20px);
+        margin-top: 2%;
+    }
+}
+
+/* Services */
+.Services {
+    margin: 5% 0;
+}
+
+.Services .food-menu-header {
+    text-align: center;
+}
+
+.Services .foods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Services .foods>div {
+    flex-basis: calc(30.33% - 20px);
+    margin: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.Services .foods img {
+    width: 100;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .Services .foods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Services .foods>div {
+        flex-basis: 100%;
+        margin-top: 2%;
+    }
+
+    .Services .foods img {
+        width: 60%;
+    }
+}
+
+/* Banner */
+
+.banner {
+    background-color: #ffefe8;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner p,
+.banner button {
+    margin: 10px 0;
+}
+
+.banner button {
+    border: #ff702a;
+    background-color: #ff702a;
+    padding: 1%;
+    cursor: pointer;
+}
 
 /* footer */
 .footer {
     padding: 30px 0;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .small-line {
-    width: 30px;
-    border-top: 2px solid #777;
-    margin: 10px auto;
+    width: 10%;
+    border-top: 2px solid #ff702a;
+    margin-top: 5px;
 }
 
-.footer>li .footer h3 {
+.footer h2 {
     color: white;
+    margin-bottom: 5px;
 }
 
-.btn-footer {
-    margin-right: 10px;
+.footer button.btn-footer {
+    margin: 10px;
     background-color: #ff702a;
     width: 40px;
     height: 40px;
     line-height: 40px;
     border-radius: 100%;
     text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 5px;
+}
+
+.footer>div {
+    flex-basis: calc(25% - 20px);
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .footer>div {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
 }
