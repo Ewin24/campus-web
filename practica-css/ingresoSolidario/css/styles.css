@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 ul {
@@ -44,15 +47,16 @@ a {
     flex-direction: column;
 }
 
-.nav{
-    margin-top: 0;
+.nav {
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
+
 /* Nav */
 .nav ul {
     list-style: none;
-    padding: 3%;
+    height: 160px;
     color: white;
     display: flex;
     align-items: center;
@@ -61,27 +65,33 @@ a {
     background-color: #3669c9;
 }
 
-
 /* section-1 */
+.divsito{
+    height: 158px;
+}
 
 .section-1 {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
     background-image: url(../images/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 .card {
     width: 40%;
-    margin: 5%;
+    margin-top: 8%;
+    margin-block-end: 3%;
     border-radius: 5%;
     background-color: white;
 }
 
 .card-header {
+    margin-top: 20%;
     text-align: center;
-    margin: 5%;
 }
 
 .card-form {
@@ -136,7 +146,7 @@ input {
 
 .que-es-text {
     width: 50%;
-    margin: 10%;
+    margin: 5%;
     text-align: center;
 }
 
