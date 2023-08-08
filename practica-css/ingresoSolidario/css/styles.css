@@ -3,33 +3,226 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
+
 .button {
-
-
     background-color: rgb(255, 255, 255);
-    padding: 10%;
-    border-top-right-radius: 30% 30%;
-    border-bottom-left-radius: 30% 30%;
-    border-top-right-radius: 30% 30%;
-
+    border: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 12px;
 }
 
 .consultar {
     background-color: #3669c9;
 }
 
+.expand-icon-2 {
+    font-size: small;
+    display: flex;
+    margin-top: 5%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.expand-icon-3 {
+    font-size: small;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nav{
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
+}
 /* Nav */
 .nav ul {
     list-style: none;
-    padding: 5%;
+    padding: 3%;
+    color: white;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
     background-color: #3669c9;
+}
+
+
+/* section-1 */
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-image: url(../images/Fondo.png);
+}
+
+
+.card {
+    width: 40%;
+    margin: 5%;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.card-header {
+    text-align: center;
+    margin: 5%;
+}
+
+.card-form {
+    margin: 5%;
+}
+
+.input {
+    margin-top: 2%;
+}
+
+select {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+.container-btn-form {
+    text-align: center;
+}
+
+.btn-form {
+    margin-top: 5%;
+    color: white;
+    width: 150px;
+    height: 35px;
+    background-color: #157ffb;
+    border-radius: 12px;
+    border: #157ffb;
+}
+
+.head-info {
+    text-align: center;
+    margin: 5%;
+    width: 30%;
+}
+
+/* section-2 */
+.que-es {
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.que-es-text {
+    width: 50%;
+    margin: 10%;
+    text-align: center;
+}
+
+.que-es-img {
+    width: 50%;
+    text-align: center;
+}
+
+
+/* section-3 */
+
+.expand-icon {
+    font-size: small;
+    display: flex;
+    margin-top: 15%;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+/* etapas entrega */
+.etapas-entrega {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.etapas-title {
+    text-align: center;
+}
+
+/* bancos autorizados */
+.bancos-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bancos-2 {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* preguntas frecuentes */
+.preguntas-frecuentes {
+    text-align: center;
+}
+
+.btn-preguntas {
+    border-radius: 100%;
+    border: #157ffb;
+    color: white;
+    background-color: #157ffb;
+    width: 30px;
+    height: 30px;
+}
+
+.pregunta {
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+/* tienes mas preguntas */
+.tienes-preguntas {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 3%;
+    background-color: #157ffb;
+    border-radius: 30px;
+}
+
+
+/* footer */
+.footer {
+    margin-top: 6%;
+    display: flex;
+    text-align: center;
+    background-color: #3669c9;
+    align-items: center;
+    justify-content: space-evenly;
 }
