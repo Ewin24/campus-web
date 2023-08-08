@@ -19,6 +19,28 @@ a {
     color: black;
 }
 
+.input {
+    margin-top: 2%;
+}
+
+/* letras */
+p {
+    font-size: larger;
+}
+
+h3 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 32px;
+}
 
 .button {
     background-color: rgb(255, 255, 255);
@@ -33,7 +55,7 @@ a {
 }
 
 .expand-icon-2 {
-    font-size: small;
+    font-size: 16px;
     display: flex;
     margin-top: 5%;
     text-align: center;
@@ -41,7 +63,7 @@ a {
 }
 
 .expand-icon-3 {
-    font-size: small;
+    font-size: 16px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -66,7 +88,7 @@ a {
 }
 
 /* section-1 */
-.divsito{
+.divsito {
     height: 158px;
 }
 
@@ -80,9 +102,8 @@ a {
     background-size: cover;
 }
 
-
 .card {
-    width: 40%;
+    width: 32%;
     margin-top: 8%;
     margin-block-end: 3%;
     border-radius: 5%;
@@ -90,16 +111,14 @@ a {
 }
 
 .card-header {
-    margin-top: 20%;
+    margin-top: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
     text-align: center;
 }
 
 .card-form {
     margin: 5%;
-}
-
-.input {
-    margin-top: 2%;
 }
 
 select {
@@ -159,7 +178,7 @@ input {
 /* section-3 */
 
 .expand-icon {
-    font-size: small;
+    font-size: 16px;
     display: flex;
     margin-top: 15%;
     text-align: center;
@@ -169,10 +188,22 @@ input {
 
 /* etapas entrega */
 .etapas-entrega {
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-block-end: 3%;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.etapa {
+    text-align: center;
+}
+
+.etapa p {
+    font-size: 28px;
+    margin: 8%;
 }
 
 .etapas-title {
@@ -226,13 +257,19 @@ input {
     border-radius: 30px;
 }
 
+.tienes-preguntas p {
+    padding: 2%;
+}
+
 
 /* footer */
 .footer {
     margin-top: 6%;
     display: flex;
+    padding: 1%;
     text-align: center;
     background-color: #3669c9;
     align-items: center;
     justify-content: space-evenly;
+    color: white;
 }
