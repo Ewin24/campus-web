@@ -22,7 +22,7 @@ body{
 }
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     
@@ -32,14 +32,14 @@ body{
     padding: 5px 5px;
 }
 .contenedor > p{    
-    font-size: 1.3vw;
+    font-size: 25px;
     font-family: 'kollektif-bold';
     text-align: center;
 
 }
 
 hr{
-    width: 90%;
+    width: 80%;
     margin: auto;
     background-color: black;
 }
@@ -47,8 +47,6 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    margin: auto;
     margin-top: 20px;
     
 }
@@ -61,12 +59,12 @@ hr{
 
 }
 .text{
-    font-size: 1.6vw;
+    font-size: 30px;
     margin: 10px 20px 30px ;
     text-align: center;
 }
 .text1{
-    font-size: 1vw;
+    font-size: 20px;
     text-align: center;
 }
 .container{
@@ -82,15 +80,21 @@ hr{
     width: 100%;
 }
 .section1{
+    justify-content: center;
     text-align: center;
+    margin-top: 10px;
 }
 .img2{
-    width: 20.5vw;
+    width: 300px;
     margin: 20px;
 }
 .img1{
-    width: 23vw;
+    width: 350px;
     margin: 20px;
+}
+.image-mapa{
+    width: 320px;
+ 
 }
 
 .btn{
@@ -119,5 +123,64 @@ hr{
     margin-top: 14px;
 }
 .cambiotxt{
-    margin: 20px 30px 30px;
+    margin: 20px 30px 40px;
+}
+.tituloServicio{
+    font-size: 30px;
+    
+    margin-bottom: 10px;
+
+}
+.status{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+.statusCont{
+    text-align:justify;
+    width:100%;
+}
+.btnRed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    border: #f50000;
+    height: 25px;
+    width: 80px;
+    border-radius: 25px;
+    background-color: #f50000;
+    color: white;
+    font-size: 10px;
+    
+}
+.status1{
+    font-size:20px;
+}
+.status2{
+    font-size: 12px;
+}
+.arreglo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.especi{
+    text-align:justify;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.p1{
+
+    font-weight: bold;
+}
+.tecnico > p{
+    margin-top: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
 }
