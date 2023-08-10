@@ -1,22 +1,36 @@
 /* estilos generales */
+@font-face {
+    font-family: Kollektif;
+    src: url(../fonts/Kollektif.ttf);
+}
+
+.icon {
+    width: 40px;
+    position: absolute;
+    left: 90%;
+    top: 9%;
+    transform: translate(-50%, -50%);
+}
 
 body {
+    font-family: Kollektif;
     background-color: antiquewhite;
 }
 
 .btn {
     border: #0050f5;
-    height: 40px;
+    height: 50px;
     width: 150px;
     border-radius: 25px;
     background-color: #0050f5;
     color: white;
 }
 
-input {
+.form-input {
     border-radius: 40px;
-    border: 1px solid black;
-    height: 40px;
+    border: 1px solid rgb(43, 38, 38);
+    height: 50px;
+    box-sizing: border-box;
 }
 
 /* popup */
@@ -52,26 +66,36 @@ input {
     flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
-    margin-block-end: 5%;
+    margin-block-end: 3%;
+}
+
+/* labels que estan sobre los input */
+.card-form label p{
+    margin-left: 2%;
+    font-size: large;
+    font-weight: 100;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-block-end: 1%;
 }
 
 .card-btn {
     display: flex;
-    gap: 10%;
+    gap: 1%;
     justify-content: center;
     align-items: center;
+    margin-block-end: 4%;
 }
 
 .card-line {
     width: 500px;
     border: black;
     background-color: black;
-    margin-block-end: 5%;
     height: 1px;
 }
 
 .card-footer {
-    padding: 5%;
+    margin-block-end: 5%;
     align-items: center;
     text-align: center;
 }
