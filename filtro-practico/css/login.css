@@ -1,11 +1,11 @@
 /* estilos generales */
 @font-face {
-    font-family: Kollektif;
-    src: url(../fonts/Kollektif.ttf);
+    font-family: myriad;
+    src: url(../fonts/myriad/MyriadPro-Light.otf);
 }
 
 .icon {
-    width: 40px;
+    width: 30px;
     position: absolute;
     left: 90%;
     top: 9%;
@@ -13,7 +13,8 @@
 }
 
 body {
-    font-family: Kollektif;
+    /* font-family: Kollektif; */
+    font-family: myriad;
     background-color: antiquewhite;
 }
 
@@ -69,11 +70,15 @@ body {
     margin-block-end: 3%;
 }
 
+.card-header p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /* labels que estan sobre los input */
 .card-form label p{
     margin-left: 2%;
-    font-size: large;
-    font-weight: 100;
+    font-size: medium;
     margin-right: 2%;
     margin-top: 3%;
     margin-block-end: 1%;
