@@ -70,7 +70,7 @@ hr{
 .container{
     display: flex;
     align-items: center;
-    margin: 20px 20px 50px 50px ;
+    margin: 20px 20px 50px 20px ;
 
 }
 .section{
@@ -85,7 +85,7 @@ hr{
     margin-top: 10px;
 }
 .img2{
-    width: 300px;
+    width: 310px;
     margin: 20px;
 }
 .img1{
@@ -93,7 +93,7 @@ hr{
     margin: 20px;
 }
 .image-mapa{
-    width: 320px;
+    width: 300px;
  
 }
 
@@ -104,12 +104,12 @@ hr{
     margin: auto;
     color: white;
     border: #0050f5;
-    height: 60px;
-    width: 200px;
-    border-radius: 25px;
+    height: 72px;
+    width: 246px;
+    border-radius: 40px;
     background-color: #0050f5;
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     
 }
 .datotitulo{
@@ -123,18 +123,27 @@ hr{
     margin-top: 14px;
 }
 .cambiotxt{
-    margin: 20px 30px 40px;
+    margin: 20px 30px 30px;
+}
+.secIzquierda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 70px;
+    padding: 20px;
 }
 .tituloServicio{
     font-size: 30px;
-    
     margin-bottom: 10px;
-
 }
 .status{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+    margin: auto;
+
+
   
 }
 .statusCont{
@@ -157,7 +166,7 @@ hr{
     
 }
 .status1{
-    font-size:20px;
+    font-size:16px;
 }
 .status2{
     font-size: 12px;
@@ -166,21 +175,24 @@ hr{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    
 }
 .especi{
     text-align:justify;
-    width: 100%;
-    font-size: 20px;
-    margin-left: 20px;
+    margin: auto;
+    margin-left: 15px;
 }
 .p1{
-
+    font-size: 15px;
     font-weight: bold;
+}
+.p2{
+    font-size: 15px;
 }
 .tecnico > p{
     margin-top: 5px;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
