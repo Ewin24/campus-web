@@ -5,9 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style-index.css">
+        <link rel="stylesheet" href="css/login.css">
         <title>Pagina Principal</title>
     </head>
     <body>
+        <div class="overlay" onclick="hideLoginPopup()"></div>
+
         <div class="pagina1">
             <div class="container">
                 <div class="logo">
@@ -22,9 +25,7 @@
                 </div>
                 <div class="botones">
                     <div class="btn"> <a href="/pages/repair.html">Reparar ya</a></div>
-                    <div class="btn"> <a href="/pages/login.html">Revisar
-                            Servicio</a></div>
-
+                    <div class="btn"> <a onclick="myFunction()">Revisar Servicio</a></div>
                 </div>
                 <div class="imagenes">
                     <div class="imagen">
@@ -185,5 +186,65 @@
             <div class="cont-footer">Avisos Legales</div>
             <div class="cont-footer">Soporte</div>
         </div>
+
+        <!-- MODAL -->
+        <div class="popup" id="popup">
+            <div class="card">
+                <div class="card-icon">
+                    <i>
+                        <img class="icon" src="../images/icons/Icon-logout.svg"
+                            alt="icono para salir de la tarjeta">
+                    </i>
+                </div>
+                <div class="card-header">
+                    <img src="../images/img/logo.jpeg" width="230px"
+                        alt="logo de pagina web repair express!">
+                    <p>Por favor ingresa tu Repair Express ID</p>
+                </div>
+                <div class="card-form">
+                    <label for="id">
+                        <p>Repair Express ID</p>
+                    </label>
+                    <input class="form-input" type="text" name="id">
+                    <label for="clave">
+                        <p>Contraseña</p>
+                    </label>
+                    <input class="form-input" type="text" name="clave">
+                </div>
+                <div class="card-btn">
+                    <a href="../pages/main-page.html">
+                        <button type="button" class="btn">Ingresar</button>
+                    </a>
+                    <a href="../pages/register.html">
+                        <button type="button" class="btn">Registrarse</button>
+                    </a>
+                </div>
+                <hr class="card-line">
+                <div class="card-footer">
+                    <p style="font-size: smaller;">Tambien puedes utilizar</p>
+                    <i><img src="../images/icons/Icon-google.svg" alt></i>
+                    <i><img src="../images/icons/Icon-facebook.svg" alt></i>
+                    <i><img src="../images/icons/Icon-apple.svg" alt></i>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+            var overlay = document.querySelector(".overlay");
+            var popup = document.getElementById("popup");
+
+            overlay.style.display = "block"; // Mostrar el fondo difuminado
+            popup.style.visibility = "visible"; // Mostrar el popup
+            }
+
+            function hideLoginPopup() {
+            var overlay = document.querySelector(".overlay");
+            var popup = document.getElementById("popup");
+
+            overlay.style.display = "none"; // Ocultar el fondo difuminado
+            popup.style.visibility = "hidden"; // Ocultar el popup
+            }
+        </script>
     </body>
 </html>
